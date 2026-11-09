@@ -1,6 +1,6 @@
 # Job queue dashboard
 
-A web dashboard for the [Distributed Priority Job Queue](../distributed-priority-job-queue) service. It shows live job counts, lets you browse, filter and inspect jobs with their attempt history, create jobs, replay dead-letter jobs, and call every API endpoint from the browser.
+A web dashboard for the [Distributed Priority Job Queue](https://github.com/harsh11101/Job-Queue) service. It shows live job counts, lets you browse, filter and inspect jobs with their attempt history, create jobs, replay dead-letter jobs, and call every API endpoint from the browser.
 
 It is a static single-page app. Everything it shows comes from the service's REST API and `/actuator/health`; it has no backend of its own.
 
