@@ -1,0 +1,216 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/urbanist";
+@import "@fontsource/dm-mono/400.css";
+@import "@fontsource/dm-mono/500.css";
+
+/*
+ * Design tokens.
+ * Palette "blue-black-cornflower" and the Urbanist + DM Mono pairing were dealt by
+ * taste-skill (start.mjs deal --page software --trade "developer tool"); radius "sharp"
+ * as the skill prescribes for developer tools. Dark is the primary theme; light uses
+ * the dealt inverse tokens. Status colours come from the dataviz status palette and
+ * always ship with an icon and a label, never colour alone.
+ */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --p-bg: #0a0d14;
+  --p-surface: #131824;
+  --p-raised: #1a2030;
+  --p-ink: #e9edf3;
+  --p-muted: #8891a1;
+  --p-action: #5ab9fc;
+  --p-action-ink: #0a0d14;
+  --p-line: color-mix(in oklab, var(--p-ink) 13%, transparent);
+  --p-line-strong: color-mix(in oklab, var(--p-ink) 24%, transparent);
+
+  --status-good: #0ca30c;
+  --status-warning: #fab219;
+  --status-critical: #d03b3b;
+  --status-progress: var(--p-action);
+  --status-idle: var(--p-muted);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --p-bg: #e9edf3;
+  --p-surface: #f4f6f9;
+  --p-raised: #ffffff;
+  --p-ink: #0a0d14;
+  --p-muted: #54575f;
+  --p-action: #0a0d14;
+  --p-action-ink: #e9edf3;
+  --p-line: color-mix(in oklab, var(--p-ink) 13%, transparent);
+  --p-line-strong: color-mix(in oklab, var(--p-ink) 24%, transparent);
+  --status-progress: #1f6fb2;
+}
+
+:root,
+[data-theme] {
+  /* shadcn roles mapped onto the dealt tokens: one system, no second palette. */
+  --background: var(--p-bg);
+  --foreground: var(--p-ink);
+  --card: var(--p-surface);
+  --card-foreground: var(--p-ink);
+  --popover: var(--p-raised);
+  --popover-foreground: var(--p-ink);
+  --primary: var(--p-action);
+  --primary-foreground: var(--p-action-ink);
+  --secondary: var(--p-surface);
+  --secondary-foreground: var(--p-ink);
+  --muted: var(--p-raised);
+  --muted-foreground: var(--p-muted);
+  --accent: var(--p-raised);
+  --accent-foreground: var(--p-ink);
+  --destructive: var(--status-critical);
+  --border: var(--p-line);
+  --input: var(--p-line-strong);
+  --ring: var(--p-action);
+  --radius: 8px;
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --m-in: 150ms;
+  --m-out: 120ms;
+  --m-press: 90ms;
+}
+
+@theme inline {
+  --font-sans: "Urbanist Variable", system-ui, sans-serif;
+  --font-heading: "Urbanist Variable", system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-line-strong: var(--p-line-strong);
+
+  --color-status-good: var(--status-good);
+  --color-status-warning: var(--status-warning);
+  --color-status-critical: var(--status-critical);
+  --color-status-progress: var(--status-progress);
+  --color-status-idle: var(--status-idle);
+
+  /* Sharp radius family: controls 4, panels 6, cards 8. */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 8px;
+
+  /* Type: nothing under 13px; reading text 16px. */
+  --text-label: 13px;
+  --text-label--line-height: 1.4;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-background text-foreground;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-feature-settings: "tnum" 1;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--p-action) 35%, transparent);
+  }
+}
+
+@layer components {
+  /* Hover/press layer (taste-skill motion.md): buttons step 1px, press sinks and scales .985. */
+  .m-press {
+    transition:
+      transform var(--m-out) var(--ease),
+      background-color var(--m-out) var(--ease),
+      border-color var(--m-out) var(--ease),
+      color var(--m-out) var(--ease);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .m-press:hover:not(:disabled) {
+      transform: translateY(-1px);
+      transition-duration: var(--m-in);
+    }
+  }
+  .m-press:active:not(:disabled) {
+    transform: translateY(1px) scale(0.985);
+    transition-duration: var(--m-press);
+  }
+
+  /* A linked card lifts 2px and its border darkens a step. */
+  .m-lift {
+    transition:
+      transform var(--m-out) var(--ease),
+      border-color var(--m-out) var(--ease);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .m-lift:hover {
+      transform: translateY(-2px);
+      border-color: var(--p-line-strong);
+      transition-duration: 180ms;
+    }
+  }
+
+  /* Links draw their underline left to right. */
+  .m-link {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size var(--m-out) var(--ease);
+  }
+  .m-link:hover,
+  .m-link:focus-visible {
+    background-size: 100% 1px;
+    transition-duration: var(--m-in);
+  }
+
+  .bar-fill {
+    transition: transform 400ms var(--ease);
+    transform-origin: left center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

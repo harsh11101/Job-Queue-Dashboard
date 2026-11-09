@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16 -4 1708 1118" width="1708" height="1118" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="ah0" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 z" fill="#495057"/></marker>
+</defs>
+<rect x="16" y="-4" width="1708" height="1118" fill="#ffffff"/>
+<rect x="40.0" y="610.0" width="1000.0" height="160.0" rx="0" fill="none" stroke="#7048e8" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="40.0" y="400.0" width="1240.0" height="150.0" rx="0" fill="none" stroke="#1971c2" stroke-width="2" stroke-dasharray="8 6"/>
+<ellipse cx="630.0" cy="170.0" rx="110.0" ry="40.0" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/>
+<rect x="380.0" y="260.0" width="500.0" height="90.0" rx="8" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+<rect x="60.0" y="450.0" width="190.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+<rect x="260.0" y="450.0" width="190.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+<rect x="460.0" y="450.0" width="190.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+<rect x="660.0" y="450.0" width="190.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+<rect x="860.0" y="450.0" width="190.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+<rect x="1060.0" y="450.0" width="190.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+<rect x="56.0" y="650.0" width="112.0" height="56.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="178.0" y="650.0" width="112.0" height="56.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="300.0" y="650.0" width="112.0" height="56.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="422.0" y="650.0" width="112.0" height="56.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="544.0" y="650.0" width="112.0" height="56.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="666.0" y="650.0" width="112.0" height="56.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="788.0" y="650.0" width="112.0" height="56.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="910.0" y="650.0" width="112.0" height="56.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="260.0" y="820.0" width="300.0" height="100.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="660.0" y="820.0" width="380.0" height="100.0" rx="8" fill="#d0bfff" stroke="#7048e8" stroke-width="2"/>
+<rect x="1100.0" y="980.0" width="260.0" height="100.0" rx="8" fill="#f8f9fa" stroke="#868e96" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="560.0" y="1000.0" width="400.0" height="90.0" rx="8" fill="#ffa8a8" stroke="#c92a2a" stroke-width="2"/>
+<rect x="1340.0" y="400.0" width="360.0" height="186.0" rx="8" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<polyline points="630.0,210.0 630.0,260.0" fill="none" stroke-linejoin="round" stroke="#495057" stroke-width="2" marker-end="url(#ah0)"/>
+<polyline points="630.0,350.0 630.0,400.0" fill="none" stroke-linejoin="round" stroke="#495057" stroke-width="2" marker-end="url(#ah0)"/>
+<polyline points="540.0,550.0 540.0,610.0" fill="none" stroke-linejoin="round" stroke="#495057" stroke-width="2" marker-end="url(#ah0)"/>
+<polyline points="410.0,770.0 410.0,820.0" fill="none" stroke-linejoin="round" stroke="#495057" stroke-width="2" marker-end="url(#ah0)"/>
+<polyline points="560.0,870.0 660.0,870.0" fill="none" stroke-linejoin="round" stroke="#495057" stroke-width="2" marker-end="url(#ah0)"/>
+<polyline points="1155.0,530.0 1155.0,870.0 1040.0,870.0" fill="none" stroke-linejoin="round" stroke="#495057" stroke-width="2" marker-end="url(#ah0)"/>
+<polyline points="850.0,920.0 850.0,1000.0" fill="none" stroke-linejoin="round" stroke="#495057" stroke-width="2" marker-end="url(#ah0)"/>
+<polyline points="1100.0,1030.0 1002.0,1030.0 1002.0,920.0" fill="none" stroke-linejoin="round" stroke="#495057" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ah0)"/>
+<text x="40.0" y="45.8" font-size="28" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Dashboard — frontend architecture (job-queue-dashboard)</text>
+<text x="40.0" y="76.7" font-size="16" fill="#495057" text-anchor="start" xml:space="preserve">Static React SPA. Pages read data only through TanStack Query hooks; one fetch wrapper talks to the service.</text>
+<text x="630.0" y="174.7" font-size="16" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">Browser</text>
+<text x="630.0" y="300.4" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">AppShell — sidebar / mobile menu, theme toggle,</text>
+<text x="630.0" y="317.9" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">health badge (useHealth, every ≥ 15 s)</text>
+<text x="54.0" y="424.7" font-size="16" fill="#1971c2" text-anchor="start" xml:space="preserve">React Router 7 — lazy-loaded routes (src/pages)</text>
+<text x="155.0" y="485.4" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">Overview</text>
+<text x="155.0" y="502.9" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">/</text>
+<text x="355.0" y="485.4" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">Jobs</text>
+<text x="355.0" y="502.9" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">/jobs</text>
+<text x="555.0" y="485.4" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">Job detail</text>
+<text x="555.0" y="502.9" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">/jobs/:id</text>
+<text x="755.0" y="485.4" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">Create job</text>
+<text x="755.0" y="502.9" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">/jobs/new</text>
+<text x="955.0" y="485.4" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">Queue</text>
+<text x="955.0" y="502.9" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">/queue</text>
+<text x="1155.0" y="485.4" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">API explorer</text>
+<text x="1155.0" y="502.9" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">/api</text>
+<text x="54.0" y="632.9" font-size="14" fill="#7048e8" text-anchor="start" xml:space="preserve">TanStack Query — src/api/queries.ts (polls every VITE_POLL_INTERVAL_MS while the tab is visible)</text>
+<text x="112.0" y="681.8" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">useStats</text>
+<text x="234.0" y="681.8" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">useHealth</text>
+<text x="356.0" y="681.8" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">useJobs</text>
+<text x="478.0" y="681.8" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">useJob</text>
+<text x="600.0" y="681.8" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">useAttempts</text>
+<text x="722.0" y="681.8" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">useCreateJob</text>
+<text x="844.0" y="681.8" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">useReplayJob</text>
+<text x="966.0" y="681.8" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">useCancelJob</text>
+<text x="60.0" y="729.0" font-size="12" fill="#495057" text-anchor="start" xml:space="preserve">GET requests retry up to 2× on network or timeout errors, never on HTTP errors · mutations are not retried ·</text>
+<text x="60.0" y="744.0" font-size="12" fill="#495057" text-anchor="start" xml:space="preserve">a job&#x27;s detail stops polling once it is SUCCEEDED, DLQ or CANCELLED</text>
+<text x="410.0" y="865.4" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">src/api/jobs.ts — jobsApi</text>
+<text x="410.0" y="882.9" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">one function per endpoint</text>
+<text x="850.0" y="856.6" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">src/api/client.ts — fetch wrapper</text>
+<text x="850.0" y="874.1" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">base URL from config.ts, request timeout,</text>
+<text x="850.0" y="891.6" font-size="14" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">ApiError (http | network | timeout)</text>
+<text x="1230.0" y="1009.5" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">src/config.ts (build time)</text>
+<text x="1230.0" y="1025.7" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">VITE_API_BASE_URL</text>
+<text x="1230.0" y="1042.0" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">VITE_POLL_INTERVAL_MS</text>
+<text x="1230.0" y="1058.2" font-size="13" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">VITE_REQUEST_TIMEOUT_MS</text>
+<text x="760.0" y="1039.7" font-size="16" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">Job queue service</text>
+<text x="760.0" y="1059.7" font-size="16" fill="#1e1e1e" text-anchor="middle" xml:space="preserve">/api/v1/jobs/** · /actuator/health</text>
+<text x="1352.0" y="424.0" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Page → hooks</text>
+<text x="1352.0" y="440.2" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Overview: useStats, useJobs</text>
+<text x="1352.0" y="456.5" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Jobs: useJobs</text>
+<text x="1352.0" y="472.7" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Job detail: useJob, useAttempts,</text>
+<text x="1352.0" y="489.0" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">    useReplayJob, useCancelJob</text>
+<text x="1352.0" y="505.2" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Create job: useCreateJob</text>
+<text x="1352.0" y="521.5" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Queue: useStats, useJobs</text>
+<text x="1352.0" y="537.7" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">AppShell: useHealth</text>
+<text x="1352.0" y="554.0" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">API explorer: client directly (sendRaw)</text>
+<text x="638.0" y="374.0" font-size="13" fill="#343a40" text-anchor="start" xml:space="preserve">renders the matched route</text>
+<text x="548.0" y="582.0" font-size="13" fill="#343a40" text-anchor="start" xml:space="preserve">pages call hooks</text>
+<text x="418.0" y="792.0" font-size="13" fill="#343a40" text-anchor="start" xml:space="preserve">query / mutation functions</text>
+<text x="575.2" y="861.7" font-size="13" fill="#343a40" text-anchor="start" xml:space="preserve">request()</text>
+<text x="1163.0" y="772.0" font-size="13" fill="#343a40" text-anchor="start" xml:space="preserve">sendRaw()</text>
+<text x="1163.0" y="788.2" font-size="13" fill="#343a40" text-anchor="start" xml:space="preserve">(any endpoint)</text>
+<text x="858.0" y="962.0" font-size="13" fill="#343a40" text-anchor="start" xml:space="preserve">HTTP (CORS)</text>
+<text x="1010.0" y="1052.0" font-size="13" fill="#343a40" text-anchor="start" xml:space="preserve">read once</text>
+</svg>

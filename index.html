@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Job queue: dashboard for the distributed priority job queue</title>
+    <meta
+      name="description"
+      content="Create, monitor and inspect jobs of the distributed priority job queue, and call its REST API from the browser."
+    />
+    <meta name="theme-color" content="#0a0d14" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Apply the stored theme before first paint so the page never flashes the wrong one.
+      try {
+        if (localStorage.getItem("jq-theme") === "light") document.documentElement.dataset.theme = "light"
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
